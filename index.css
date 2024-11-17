@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background-color: #f3e5f5;
+    --text-color: #333;
+    --header-bg: #9c27b0;
+    --card-bg: #ffffff;
+    --card-shadow: rgba(0, 0, 0, 0.1);
+    --button-bg: #7b1fa2;
+    --title-color: #34495e;
+    --figcaption: #555;
+}
+
+body.dark-mode {
+    --background-color: #1a002b;
+    --text-color: #cfcfcf;
+    --header-bg: #4a0072;
+    --card-bg: #24142d;
+    --card-shadow: rgba(0, 0, 0, 0.5);
+    --button-bg: #6a1b9a;
+    --title-color: #7babf8;
+    --figcaption: #dad3d3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    text-align: center;
+    background-color: var(--header-bg);
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+button.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button.theme-toggle:hover {
+    opacity: 0.8;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    background-color: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px var(--card-shadow);
+    padding: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+figure {
+    text-align: center;
+    margin: 20px 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: var(--figcaption);
+}
+
+audio, video {
+    display: block;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 500px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: var(--header-bg);
+    color: white;
+    border-radius: 8px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: var(--title-color);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    article {
+        margin-bottom: 10px;
+    }
+}

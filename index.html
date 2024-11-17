@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="ずっと真夜中でいいのに（ZUTOMAYO）的介绍网站，包含乐队信息、音乐作品和多媒体资源。">
+    <meta name="keywords" content="ZUTOMAYO, ずっと真夜中でいいのに, 日本音乐, 乐队">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+    <title>ずっと真夜中でいいのに | ZUTOMAYO</title>
+</head>
+<body>
+<header>
+    <h1>ずっと真夜中でいいのに | ZUTOMAYO</h1>
+    <button id="theme-toggle" class="theme-toggle">切换主题</button>
+</header>
+<section>
+    <article>
+        <h2>乐队简介</h2>
+        <p><strong>ずっと真夜中でいいのに</strong>（永远是深夜有多好，简称ZUTOMAYO）是一支来自日本的音乐组合。主唱、作词作曲均由神秘的ACAね小姐姐完成或合作完成哦！她在媒体上只以文字或声音出现，电视节目和直播中也不露面呢。在现场演出时，由于灯光的原因，她的身影也不太清晰，真是充满神秘感呢！</p>
+        <p>关于乐队名字的由来，ACAね在2021年1月30日播出的NHK节目“SONGS”中提到：“当我专注于某件事时，通常会发现已经变成了半夜或早晨。所以我想‘永远是深夜有多好。’这个名字正是来源于此。”</p>
+        <figure>
+            <img src="assets/images/acane.jpg" alt="ACAね绝赞演出中❤">
+            <figcaption>ACAね绝赞演出中❤</figcaption>
+        </figure>
+        <h2>音乐风格</h2>
+        <p>ZUTOMAYO的音乐风格融合了摇滚和J-POP等元素，充满了独特的魅力！他们的音乐作品总是带给人耳目一新的感觉，真是让人爱不释手！</p>
+        <h2>代表作品</h2>
+        <ul>
+            <li><strong>《秒針を噛む》</strong>：2018年6月发布的首支单曲，迅速在网络上获得大量关注，标志着乐队的正式出道</li>
+            <li><strong>《お勉強しといてよ》</strong>：2020年5月发布的单曲，展现了乐队在音乐创作上的多样性</li>
+            <li><strong>《正しくなれない》</strong>：2020年12月发布的单曲，作为电影《约定的梦幻岛》的主题曲，进一步提升了乐队的知名度</li>
+        </ul>
+        <figure>
+            <img src="assets/images/jpop.jpg" alt="ACAね绝赞演出中❤">
+            <figcaption>Zutomayo的演唱会，好想去一次现场</figcaption>
+        </figure>
+        <h2>MV</h2>
+        <div class="video-gallery">
+            <video controls>
+                <source src="assets/video/video-1.mp4" type="video/mp4">
+                您的浏览器不支持视频播放。
+            </video>
+        </div>
+    </article>
+    <article>
+        <h2>照片墙</h2>
+        <figure>
+            <img src="assets/images/zutomayo.webp" alt="ずっと真夜中でいいのに 乐队照片">
+            <figcaption>ずっと真夜中でいいのに MV封面</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/images/zutomayo-2.webp" alt="ずっと真夜中でいいのに 演出照片">
+            <figcaption>ずっと真夜中でいいのに 概念图</figcaption>
+        </figure>
+        <figure>
+            <img src="assets/images/zutomayo-3.webp" alt="ずっと真夜中でいいのに 演出照片">
+            <figcaption>ずっと真夜中でいいのに MV封面</figcaption>
+        </figure>
+        <h2>音乐播放器</h2>
+        <div id="aplayer" class="music-player"></div>
+    </article>
+</section>
+<br>
+<footer>
+    <p>ALL RIGHTS RESERVED 2024©<a href="https://zutomayo.net/">ZUTOMAYO</a></p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="index.js"></script>
+<script src="toggle-theme.js"></script>
+</body>
+</html>
